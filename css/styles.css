@@ -5,10 +5,9 @@ body {
     padding: 0;
   }
   
-  header {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
+  .trip-list {
+    list-style-type: none;
+    padding: 0;
   }
   
   section {
@@ -19,10 +18,33 @@ body {
   section img {
     max-width: 100%;
     height: auto;
+  }  
+
+  #play-audio-btn {
+    display: block;
+    margin: 1rem auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6a1b9a;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
-  
-  footer {
+
+  a[href="javascript:history.back()"] {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
     background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+  }  
+  
+  header, footer {
+    background-color: #6a1b9a; /* Change this value to the desired shade of purple */
     padding: 1rem;
     text-align: center;
   }
