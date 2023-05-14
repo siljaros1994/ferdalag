@@ -3,99 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pólland</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <audio id="background-audio" autoplay loop hidden muted>
+    <source src="audio/Her-name-is-she.mp3" type="audio/mpeg">
+    <embed src="audio/Her-name-is-she.mp3" hidden="true" autostart="true" loop="true">
+  </audio>
+  
   <header>
-    <h1>Sextug Skvísu ferðalagið okkar</h1>
+    <h1>Sextuga Skvísu ferðalagið okkar</h1>
   </header>
 
   <section>
-    <img src="images/0001.jpg" alt="Slide 1">
-  </section>
+    <h2>Pólland eða Ungverjaland</h2>
+    <ul class="trip-list">
+      <li><a href="trip1.html">Pólland</a></li>
+      <li><a href="trip2.html">Ungverjaland</a></li>
+      <img src="images/i1.jpg" alt="" />
+      <button id="play-audio-btn">&#9654;</button>
 
-  <section>
-    <img src="images/0002.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0003.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0004.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0005.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0006.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0007.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0008.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0009.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0010.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0011.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0012.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0013.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0014.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0015.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0016.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0017.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0018.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0019.jpg" alt="Slide 1">
-  </section>
-
-  <section>
-    <img src="images/0020.jpg" alt="Slide 1">
-  </section>
-  
-
-  <!-- Add more sections for each slide -->
+    </ul>
+  </section>  
 
   <footer>
     <p>©, 2023, Sigfríð Þormar.</p>
   </footer>
+
+  <script>
+    document.getElementById('play-audio-btn').addEventListener('click', function () {
+      var audioElement = document.getElementById('background-audio');
+      if (audioElement.muted) {
+        audioElement.muted = false;
+        audioElement.play();
+      }
+    });
+  </script>  
+  
 </body>
 </html>
